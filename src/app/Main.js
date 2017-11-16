@@ -190,22 +190,22 @@ export default class Main extends Component {
             <FlatButton
               label="Examples file"
               primary={true}
-              onTouchTap={() => {location.href = 'https://github.com/puranjayjain/react-materialui-notifications/blob/master/src/app/Main.js'}}
+              onClick={() => {location.href = 'https://github.com/puranjayjain/react-materialui-notifications/blob/master/src/app/Main.js'}}
             />
           </Paper>
           <div style={styles.buttonContainer}>
             <RaisedButton
               label="Show Notification"
-              onTouchTap={this.showNotification}
+              onClick={this.showNotification}
             />
             <RaisedButton
               label="Show Personalised Notification"
-              onTouchTap={this.showPersonalisedNotification}
+              onClick={this.showPersonalisedNotification}
             />
             <RaisedButton
               label="Show Priority Notification"
               secondary={true}
-              onTouchTap={this.showPriorityNotification}
+              onClick={this.showPriorityNotification}
             />
           </div>
           <div style={styles.table}>
