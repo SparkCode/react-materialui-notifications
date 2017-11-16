@@ -461,7 +461,7 @@ class Notification extends Component {
                 <IconButton
                   style={iconButtonStyle}
                   iconStyle={iconStyle}
-                  onTouchTap={this.onCloseNotification}
+                  onClick={this.onCloseNotification}
                 >
                   <Close />
                 </IconButton>
@@ -499,7 +499,7 @@ class Notification extends Component {
                     rightIconButton={desktopClose}
                     innerDivStyle={listItemStyle}
                     disabled={this.props.onClick ? false : true}
-                    onTouchTap={() => {
+                    onClick={() => {
                       if (this.props.onClick) {
                         this.props.onClick()
                         this.props.removeNotification()
